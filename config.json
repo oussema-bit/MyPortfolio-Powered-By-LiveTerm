@@ -1,15 +1,15 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "Ayari Oussama",
+  "name": "Oussama Ayari",
+  "ascii": "myJobRole",
   "social": {
     "github": "github",
     "linkedin": "linkedin"
   },
   "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
+  "ps1_hostname": "Ayari Oussama",
+  "ps1_username": "user",
   "repo": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {

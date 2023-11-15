@@ -21,7 +21,21 @@ const sumfetch = async (args: string[]): Promise<string> => {
          @|                      @@          <u><a href="${config.donate_urls.patreon}" target="_blank">${config.donate_urls.patreon}</a></u>
 
 `;
-  } else {
+  }
+  else if(config.ascii=='myJobRole'){
+    return `
+  
+     __       _                    
+    / /      (_)  ____ _   __  __ __ __
+   / /      / /  / __  /  / / / / | |/_/
+  / /___   / /  / / / /  / /_/ /  >  <  
+ /_____/  /_/  /_/ /_/  /__,__/  /_/|_|  
+                                 
+ 
+ `;
+  }
+  
+  else {
     return `
            ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                  sumfetch
         ▄▓▓▀ ▄▓▓▀▓▓▓▀▓▓▄ ▀▀▓▓▄              -----------
