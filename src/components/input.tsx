@@ -88,7 +88,7 @@ export const Input = ({
         ref={inputRef}
         id="prompt"
         type="text"
-        className={`bg-light-background dark:bg-dark-background focus:outline-none flex-grow ${
+        className={`bg-light-ubuntu-bg dark:bg-dark-ubuntu-bg focus:outline-none flex-grow ${
           commandExists(command) || command === ''
             ? 'text-dark-green'
             : 'text-dark-red'

@@ -1,17 +1,17 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "readmeUrl": "",
   "title": "Ayari Oussama",
-  "name": "Oussama Ayari",
+  "name": "Ayari Oussama",
   "ascii": "myJobRole",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "oussema-bit",
+    "linkedin": "oussema-ayari"
   },
-  "email": "contact@email.com",
+  "email": "oussama.ayari1@esprit.tn",
   "ps1_hostname": "Ayari Oussama",
-  "ps1_username": "user",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "ps1_username": "recruiter",
+  "repo": "https://github.com/oussema-bit/MyPortfolio-Powered-By-LiveTerm",
+  "resume_url": "https://jade-chanda-41.tiiny.site/",
   "donate_urls": {
     "paypal": "https://paypal.me/cveinnt",
     "patreon": "https://patreon.com/cveinnt"
@@ -21,10 +21,13 @@
       "background": "#FBF1C9",
       "foreground": "#3C3836",
       "yellow": "#D79921",
-      "green": "#98971A",
+      "green": "#28bf80",
       "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
+      "blue": "#297bff",
+      "red": "#CA2124",
+      "ubuntu-bg": "#2d0922",
+      "ubuntu-textcolor":"#76de34",
+      "ubuntu-pathcolor": "#729dcd"
     },
     "dark": {
       "background": "#2E3440",

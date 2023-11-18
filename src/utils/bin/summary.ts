@@ -23,16 +23,25 @@ const sumfetch = async (args: string[]): Promise<string> => {
 `;
   }
   else if(config.ascii=='myJobRole'){
-    return `
+    return String.raw`
   
-     __       _                    
-    / /      (_)  ____ _   __  __ __ __
-   / /      / /  / __  /  / / / / | |/_/
-  / /___   / /  / / / /  / /_/ /  >  <  
- /_____/  /_/  /_/ /_/  /__,__/  /_/|_|  
-                                 
- 
- `;
+            ////^\\\\             
+            | ^   ^ |              ABOUT
+           @ (o) (o) @             Oussama Ayari
+            |   <   |              <u><a href="${config.resume_url}" target="_blank">resume</a></u>
+            |  ___  |             爵 <u><a href="${config.repo}" target="_blank">Github repo</a></u>
+             \_____/              
+          ____|  |____            
+         /    \__/    \           -----------
+        /              \          
+       /\_/|        |\_/\        
+      / /  |        |  \ \         CONTACT 
+     ( <   |        |   > )        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+      \ \  |        |  / /         <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+       \ \ |________| / /          <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+        \ \|
+
+`;
   }
   
   else {

@@ -2,23 +2,20 @@
 
 import * as bin from './index';
 import config from '../../../config.json';
+import helptext from './help.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
-    }
+      c += `\n${i})`+Object.keys(bin).sort()[i - 1] + ' ';
+      c += helptext[Object.keys(bin).sort()[i - 1].toString()] + '\n';
   }
   return `Welcome! Here are all the available commands:
-\n${c}\n
+\n${c}
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+Type 'summary' to display summary.
 `;
 };
 
@@ -33,9 +30,9 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Welcome to my website!
 More about me:
-'sumfetch' - short summary.
+'summary' - short summary.
 'resume' - my latest resume.
-'readme' - my github readme.`;
+'github' - my github profile.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -43,14 +40,7 @@ export const resume = async (args: string[]): Promise<string> => {
   return 'Opening resume...';
 };
 
-// Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -71,7 +61,7 @@ export const linkedin = async (args: string[]): Promise<string> => {
 };
 
 // Search
-export const google = async (args: string[]): Promise<string> => {
+/*export const google = async (args: string[]): Promise<string> => {
   window.open(`https://google.com/search?q=${args.join(' ')}`);
   return `Searching google for ${args.join(' ')}...`;
 };
@@ -81,15 +71,12 @@ export const duckduckgo = async (args: string[]): Promise<string> => {
   return `Searching duckduckgo for ${args.join(' ')}...`;
 };
 
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
+
 
 export const reddit = async (args: string[]): Promise<string> => {
   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
   return `Searching reddit for ${args.join(' ')}...`;
-};
+};*/
 
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
@@ -134,8 +121,8 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+  window.open('https://www.youtube.com/watch?v=hPr-Yc92qaY', '_blank'); // ...I'm sorry
+  return `Permission denied: with little power comes... no responsibility? memes? `;
 };
 
 // Banner
@@ -157,7 +144,20 @@ export const banner = (args?: string[]): string => {
                                                                                                                                                 
 
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
+Type 'summary' to display summary.
+Type 'resume' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.resume_url}" target="_blank">here</a></u> to access to my CV in pdf!
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
+
+//Certifications
+
+//Technical skills
+
+//Experiences
+
+//Language levels
+
+//Education
+
+//Social links
